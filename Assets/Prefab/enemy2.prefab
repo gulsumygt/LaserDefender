@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 114628482248138208}
   - component: {fileID: 114142725160164720}
   - component: {fileID: 58277470129156704}
+  - component: {fileID: 4595037030062425506}
+  - component: {fileID: 5757832853835017376}
   m_Layer: 9
   m_Name: enemy2
   m_TagString: Untagged
@@ -115,6 +117,10 @@ MonoBehaviour:
   projectTileSpeed: 10
   deathVFX: {fileID: 1847426548883578, guid: 673ef063906eaf04fb4c57d9ed0209e5, type: 3}
   durationOfExplotion: 1
+  deathSound: {fileID: 8300000, guid: ce89e6f96e058497596b2a0cd48d0773, type: 3}
+  deathSoundVolume: 0.75
+  shootSound: {fileID: 8300000, guid: 8fdd5848321e34dd18d2669df287948d, type: 3}
+  shootSoundVolume: 0.25
 --- !u!58 &58277470129156704
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -131,3 +137,37 @@ CircleCollider2D:
   m_Offset: {x: 0.006318569, y: 0.012637377}
   serializedVersion: 2
   m_Radius: 0.35230708
+--- !u!114 &4595037030062425506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683440698130992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d7b8e59a25212e4589e64ce84fbd41b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 100
+--- !u!50 &5757832853835017376
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683440698130992}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
