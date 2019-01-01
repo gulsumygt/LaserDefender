@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 212261395670019662}
   - component: {fileID: 50579202579015774}
   - component: {fileID: 114607922312324948}
-  - component: {fileID: 70001818891250112}
+  - component: {fileID: 7779675918046025745}
+  - component: {fileID: 4612733295843043929}
   m_Layer: 11
-  m_Name: Enemy Laser
+  m_Name: BigBoyLaser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71,8 +72,8 @@ SpriteRenderer:
   m_SortingLayerID: 1641105299
   m_SortingLayer: -1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 758cde59dfd6d4b9590a4fb6fd4aa7a0, type: 3}
-  m_Color: {r: 1, g: 0.9084393, b: 0.25943398, a: 1}
+  m_Sprite: {fileID: 21300000, guid: f2af79297d8ce46c5afc4438cbb0d800, type: 3}
+  m_Color: {r: 1, g: 0.28941125, b: 0.2588235, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -115,9 +116,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d7b8e59a25212e4589e64ce84fbd41b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 100
---- !u!70 &70001818891250112
-CapsuleCollider2D:
+  damage: 200
+--- !u!58 &7779675918046025745
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -130,5 +131,18 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.26, y: 0.74}
-  m_Direction: 0
+  serializedVersion: 2
+  m_Radius: 0.185
+--- !u!114 &4612733295843043929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1996858262764286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abb6d57336240445f98d9309d3bfdcb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spinSpeed: 720

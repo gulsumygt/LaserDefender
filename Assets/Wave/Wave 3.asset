@@ -4,17 +4,18 @@
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e33cb3652d417814f86ee023a509c5b7, type: 3}
   m_Name: Wave 3
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 1683440698130992, guid: e0348cbe34490324bbf2e0302399bd9a,
-    type: 2}
-  pathPrefab: {fileID: 1247195777393050, guid: 2f11c3c15257c214dba1fbbb26a4132f, type: 2}
-  timeBetweenSpawn: 0.5
-  spawnRandomFactor: 0.3
-  numberOfEnemy: 3
-  moveSpeed: 6
+  enemyPrefab: {fileID: 1532159671782692, guid: 35edaa628159f46af8dba04f85aa27bb,
+    type: 3}
+  pathPrefab: {fileID: 1247195777393050, guid: 6960951c957804221b604fc5a310786c, type: 3}
+  timeBetweenSpawn: 1
+  spawnRandomFactor: 0.5
+  numberOfEnemy: 6
+  moveSpeed: 3
